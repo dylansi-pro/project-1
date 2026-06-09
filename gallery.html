@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koko Café | Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="site-container">
+      <header class="main-header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/koko_cafe_logo.png"
+              alt="Koko Café Logo"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="about.html" class="dropdown-trigger">About us ▾</a>
+              <ul class="dropdown-child">
+                <li><a href="about.html#staff">Our Staff</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="menu.html" class="dropdown-trigger">Our Menu ▾</a>
+              <ul class="dropdown-child">
+                <li><a href="menu.html#coffee">Specialty Coffee</a></li>
+                <li><a href="menu.html#pastries">Pastries</a></li>
+                <li><a href="menu.html#brunch">Brunch</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="gallery-page">
+        <div class="gallery-intro">
+          <h1>Gallery</h1>
+          <p class="gallery-subtitle">
+            A glimpse into our cozy space, fresh brews, and daily treats.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/cafe-interior.jpg" alt="Koko Café storefront" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/cat.jpg" alt="Barista making latte art" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/study.jpg" alt="Cozy seating corner" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/pastries.jpg" alt="Freshly baked pastries" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-vibe.jpg" alt="People enjoying coffee" />
+          </div>
+          <div class="gallery-item">
+            <img src="images/grain.jpg" alt="Our coffee beans display" />
+          </div>
+        </div>
+      </main>
+
+      <footer class="main-footer">
+        <p>&copy; 2026 Koko Café.</p>
+      </footer>
+    </div>
+  </body>
+</html>

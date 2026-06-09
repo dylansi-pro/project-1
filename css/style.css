@@ -1,0 +1,630 @@
+/* ==========================================================================
+   I. STRUCTURE DE LA PAGE NAVIGATION BAR + FOOTER
+   ========================================================================== */
+
+/* ==========================================================================
+   1. RESET & CONFIGURATION GLOBALE
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff2e0;
+  color: #47423f;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #573b25;
+}
+
+/* ==========================================================================
+   2. BLOCK PRINCIPALE (CONTRAINTE 960px)
+   ========================================================================== */
+.site-container {
+  width: 960px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Ombre sur les côtés */
+}
+
+/* ==========================================================================
+   3. HEADER
+   ========================================================================== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  border-bottom: 1px solid #ebdcd0;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 960px;
+  z-index: 1000;
+  left: 50%;
+  margin-left: -480px;
+}
+
+.logo-img {
+  height: 90px;
+  width: auto;
+}
+
+/* ==========================================================================
+   4. MENU PRINCIPAL
+   ========================================================================== */
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #5c4d42;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #c08261; /* hover */
+}
+
+.dropdown {
+  position: relative; /* Repère pour le sous-menu */
+}
+
+/* Le sous-menu défillant */
+.dropdown-child {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  list-style: none;
+  border: 1px solid #ebdcd0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  padding: 5px 0;
+}
+
+.dropdown-child li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+}
+
+.dropdown-child li a:hover {
+  background-color: #fbf8f5;
+}
+
+/* On affiche au survol de la souris */
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
+/* ==========================================================================
+   5. FOOTER
+   ========================================================================== */
+.main-footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #2c1d11;
+  color: #f7f4f0;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   II. HOME
+   ========================================================================== */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 40px;
+  background-color: #fbf9f6; /* Fond légèrement contrasté pour le hero */
+}
+
+.hero-text {
+  flex: 1; /* Prend 50% de la largeur */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  color: #666666;
+}
+
+.hero-image {
+  flex: 1; /* Prend 50% de la largeur */
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Bouton d'action */
+.btn-primary {
+  display: inline-block;
+  background-color: #2c1d11;
+  color: #ffffff;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c08261;
+}
+
+/* --- SECTION FEATURES (Les 3 blocs en ligne) --- */
+.features-section {
+  display: flex;
+  gap: 20px;
+  padding: 60px 40px;
+}
+
+.feature-card {
+  flex: 1; /* Aligne les 3 blocs à taille égale */
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ebdcd0;
+  border-radius: 8px;
+}
+
+/* Style pour mes images */
+.feature-icon img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px auto;
+  object-fit: cover;
+  border-radius: 50%; /* rend les images rondes */
+  border: 2px solid #f7f4f0;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #666666;
+}
+
+/* ==========================================================================
+   III. ABOUT
+   ========================================================================== */
+
+/* ==========================================================================
+   1. ABOUT US
+   ========================================================================== */
+
+.about-intro {
+  gap: 40px;
+  padding: 60px 40px;
+  background-color: #fbf9f6;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+
+.about-intro h2 {
+  color: #6e6254;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  margin-bottom: 30px;
+  color: #666666;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 350px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+
+.features-section {
+  display: flex;
+  gap: 20px;
+  padding: 60px 40px;
+}
+
+/* ==========================================================================
+   2. STAFF
+   ========================================================================== */
+
+.about-staff {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-staff h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.staff-subtitle {
+  color: #888888;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.staff-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.staff-card {
+  background: #fffaf5;
+  border: 1px solid #eae6e1;
+  padding: 30px 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.staff-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #6e6254;
+}
+
+.staff-img[alt*="Cat"] {
+  object-position: center top;
+}
+
+.staff-card h3 {
+  font-size: 1.3rem;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.staff-role {
+  color: #6e6254;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.staff-desc {
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   IV. OUR MENU
+   ========================================================================== */
+
+/* En-tête de la page Menu */
+.menu-page {
+  padding: 40px 10px;
+}
+
+.menu-intro {
+  text-align: center;
+  background-color: #fbf9f6;
+  padding: 50px 40px;
+  margin-bottom: 40px;
+}
+
+.menu-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.menu-subtitle {
+  color: #666666;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Sections du menu (Coffee, Pastries, Brunch) */
+.menu-section {
+  scroll-margin-top: 110px;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #ebdcd0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* Chaque carte de produit */
+.menu-item {
+  flex: 1;
+  min-width: 260px; /* Évite qu'elles ne deviennent trop écrasées */
+  background-color: #ffffff;
+  border: 1px solid #ebdcd0;
+  border-radius: 8px;
+  overflow: hidden; /* Force l'image à respecter les coins arrondis de la carte */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Recadre sans déformer */
+}
+
+/* le titre et le prix */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 20px 10px 20px;
+}
+
+.item-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #573b25;
+}
+
+.item-price {
+  font-weight: 700;
+  color: #c08261;
+  font-size: 1.1rem;
+}
+
+/* Description du produit */
+.item-description {
+  font-size: 0.95rem;
+  color: #666666;
+  padding: 0 20px 20px 20px;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   V. GALLERY
+   ========================================================================== */
+
+.gallery-page {
+  padding: 40px 0;
+}
+
+.gallery-intro {
+  text-align: center;
+  background-color: #fbf9f6;
+  padding: 50px 40px;
+  margin-bottom: 40px;
+}
+
+.gallery-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.gallery-subtitle {
+  color: #666666;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0 40px 60px 40px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  height: 250px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Effet de zoom */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   VI. CONTACT PAGE
+   ========================================================================== */
+
+.contact-page {
+  padding: 60px 40px;
+  background-color: #fbf9f6;
+}
+
+.contact-page h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border: 1px solid #ebdcd0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.contact-form > div {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  color: #573b25;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ebdcd0;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  color: #47423f;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+textarea.form-input {
+  resize: vertical;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #c08261;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #2c1d11;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #c08261;
+}
+/* ==========================================================================
+   VI. CONTACT PAGE (Liaison Bootstrap & Styles Personnalisés)
+   ========================================================================== */
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border: 1px solid #ebdcd0 !important; /* Force ta couleur de bordure face à Bootstrap */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.contact-form .form-label {
+  display: block;
+  font-weight: 700;
+  color: #573b25;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Applique ton style sur les inputs et sur le menu déroulant Bootstrap */
+.form-input,
+.contact-form .form-select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ebdcd0;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  color: #47423f;
+  background-color: #ffffff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Aligne correctement la petite flèche du select Bootstrap avec ton padding */
+.contact-form .form-select {
+  background-position: right 15px center;
+  height: auto;
+}
+
+textarea.form-input {
+  resize: vertical;
+}
+
+/* Supprime le halo bleu de Bootstrap et met ta couleur marron/orange au clic */
+.form-input:focus,
+.contact-form .form-select:focus {
+  outline: none;
+  border-color: #c08261 !important;
+  box-shadow: 0 0 0 0.2rem rgba(192, 130, 97, 0.15) !important; /* Halo doux assorti */
+}
+
+/* Style du bouton "Send" pour occuper 100% de la largeur comme sur l'image */
+button[type="submit"] {
+  background-color: #2b1e16; /* La couleur sombre de ton footer/branding */
+  color: #ffffff; /* Texte en blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #c08261;
+  color: #ffffff;
+}

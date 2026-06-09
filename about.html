@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koko Café | About us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="site-container">
+      <header class="main-header">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/koko_cafe_logo.png"
+              alt="Koko Café Logo"
+              class="logo-img"
+          /></a>
+        </div>
+
+        <nav class="main-navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="about.html" class="dropdown-trigger active"
+                >About us ▾</a
+              >
+              <ul class="dropdown-child">
+                <li><a href="about.html#staff">Our Staff</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="menu.html" class="dropdown-trigger">Our Menu ▾</a>
+              <ul class="dropdown-child">
+                <li><a href="menu.html#coffee">Specialty Coffee</a></li>
+                <li><a href="menu.html#pastries">Pastries</a></li>
+                <li><a href="menu.html#brunch">Brunch</a></li>
+              </ul>
+            </li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="about-intro">
+          <h1>About Koko Café</h1>
+          <div class="intro-content">
+            <div class="intro-text">
+              <h2>Who We Are</h2>
+              <p>
+                Welcome to Koko Café! Founded with a passion for exceptional
+                coffee, we are a cozy neighborhood spot dedicated to bringing
+                people together over the perfect brew. Our space is designed to
+                be your second home, whether you're catching up with friends or
+                finding a quiet corner to work.
+              </p>
+
+              <h2>Our Mission</h2>
+              <p>
+                Our goal is simple: to serve sustainably sourced, specialty
+                coffee alongside fresh, artisanal pastries. We believe that
+                every cup tells a story, and we work closely with local roasters
+                to ensure that every sip you take supports ethical and
+                quality-driven farming.
+              </p>
+            </div>
+            <div class="intro-image">
+              <img src="images/cafe-interior.jpg" alt="Inside Koko Café" />
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section id="staff" class="about-staff">
+          <h2>Meet Our Team</h2>
+          <p class="staff-subtitle">
+            The passionate people behind your daily brew.
+          </p>
+
+          <div class="staff-grid">
+            <!-- Membre 1 -->
+            <div class="staff-card">
+              <img
+                src="images/bear.jpg"
+                alt="Bear - Founder & Head Barista"
+                class="staff-img"
+              />
+              <h3>Bear</h3>
+              <p class="staff-role">Founder & Head Barista</p>
+              <p class="staff-desc">
+                Bear started Koko Café to share their love for latte art and
+                single-origin beans. Always ready for a coffee chat!
+              </p>
+            </div>
+
+            <!-- Membre 2 -->
+            <div class="staff-card">
+              <img
+                src="images/cat.jpg"
+                alt="Cat - Pastry Chef"
+                class="staff-img"
+              />
+              <h3>Cat</h3>
+              <p class="staff-role">Pastry Chef</p>
+              <p class="staff-desc">
+                Cat bakes our famous pastries fresh every single morning. Her
+                secret ingredient? A touch of love and lots of butter.
+              </p>
+            </div>
+
+            <!-- Membre 3 -->
+            <div class="staff-card">
+              <img src="images/owl.jpg" alt="Owl - Barista" class="staff-img" />
+              <h3>Owl</h3>
+              <p class="staff-role">Barista</p>
+              <p class="staff-desc">
+                Owl is our espresso expert and playlist curator. He knows
+                exactly how to brighten your morning with a smile.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>&copy; 2026 Koko Café.</p>
+      </footer>
+    </div>
+  </body>
+</html>
